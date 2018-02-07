@@ -6,11 +6,27 @@
 -->
 
 
-<ion-content padding>
-  <!--<div class="logo">-->
-    <!--<img src="./assets/imgs/myapp.png" width="400" height="400">-->
-  <!--</div>-->
-  <!--<ion-img width="300" height="300" src="./assets/imgs/myapp.png"></ion-img>-->
+<ion-content padding xmlns="http://www.w3.org/1999/html">
+
+
   <img src="./assets/imgs/myapp.png">
+  <ion-list>
+    <form #loginForm="ngForm" (ngSubmit)="lestLogin()" >
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email"[(ngModel)]="Admin.email" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="Admin.password"name="password"></ion-input>
+    </ion-item>
+      <div padding>
+        <button ion-button color="danger" width="50px">LOGIN</button>
+      </div>
+
+    </form>
+  </ion-list>
+
 
 </ion-content>

@@ -4,5 +4,11 @@
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
-}
+  },
+
+      "path": "waynelidza",
+      "proxyUrl": "http://.atwebpages.com/loginAdmin.php"
+    }
+
+
+
